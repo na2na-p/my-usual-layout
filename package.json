@@ -24,7 +24,7 @@
         "name": "panel",
         "title": "Panel",
         "width": 3,
-        "file": "panel.html",
+        "file": "dist/index.html",
         "headerColor": "#C239B3"
       }
     ],
