@@ -13,7 +13,8 @@
 		"nodecg:start": "cd ../../ && nodecg start",
 		"build": "cd dashboard && yarn build && cd ../graphics && yarn build",
 		"lint": "cd dashboard && yarn lint && cd ../graphics && yarn lint",
-		"lint:fix": "cd dashboard && yarn lint:fix && cd ../graphics && yarn lint:fix"
+		"lint:fix": "cd dashboard && yarn lint:fix && cd ../graphics && yarn lint:fix",
+		"tscNoEmit": "cd dashboard && yarn tsc --noEmit && cd ../graphics && yarn tsc --noEmit"
 	},
 	"files": [
 		"dashboard",

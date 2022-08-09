@@ -14,3 +14,20 @@ jobs:
         run: yarn install:ci
       - name: ESLint
         run: yarn lint
+  tsc_noEmit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set Node.js 16.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+      - name: settingUp packages
+        run: npm install --global nodecg-cli
+      - name: Check
+        run: pwd
+      - name: Checkout
+        run: mkdir nodecg && cd nodecg && nodecg setup && nodecg install na2na-p/my-usual-layout
+      - name: ci
+        run: yarn install
+      - name: ESLint
+        run: yarn tscNoEmit
