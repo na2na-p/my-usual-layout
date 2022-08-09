@@ -23,9 +23,7 @@ jobs:
           node-version: 16.x
       - name: settingUp packages
         run: npm install --global nodecg-cli
-      - name: Checkout
-        run: mkdir nodecg && cd nodecg && nodecg setup && nodecg install na2na-p/my-usual-layout
       - name: ci
-        run: ls && cd nodecg/bundles/my-usual-layout && yarn install
+        run: mkdir nodecg && cd nodecg && nodecg setup && nodecg install na2na-p/my-usual-layout && cd nodecg/bundles/my-usual-layout && yarn install
       - name: tscNoEmit
         run: cd nodecg/bundles/my-usual-layout && yarn tscNoEmit
