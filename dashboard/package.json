@@ -8,7 +8,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint": "yarn eslint --ext .tsx,.ts ./src",
-    "lint:fix": "yarn eslint -c .eslintrc.cjs --ext .tsx,.ts ./src --fix"
+    "lint:fix": "yarn eslint --ext .tsx,.ts ./src --fix"
   },
   "dependencies": {
     "react": "^18.2.0",
