@@ -26,7 +26,7 @@ jobs:
       - name: Check
         run: pwd
       - name: Checkout
-        run: mkdir nodecg && cd nodecg && nodecg setup && nodecg install na2na-p/my-usual-layout
+        run: mkdir nodecg && cd nodecg && nodecg setup && nodecg install na2na-p/my-usual-layout && pwd
       - name: ls
         run: ls
       - name: ci
