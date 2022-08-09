@@ -27,6 +27,8 @@ jobs:
         run: pwd
       - name: Checkout
         run: mkdir nodecg && cd nodecg && nodecg setup && nodecg install na2na-p/my-usual-layout
+      - name: ls
+        run: ls
       - name: ci
         run: cd bundles/my-usual-layout && yarn install
       - name: tscNoEmit
