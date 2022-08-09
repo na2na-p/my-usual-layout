@@ -1,41 +1,47 @@
 {
-  "name": "my-usual-layout",
-  "version": "0.0.0",
-  "description": "",
-  "homepage": "",
-  "author": {
-    "name": "na2na-p",
-    "email": "na2na@na2na.dev"
-  },
-  "files": [
-    "dashboard",
-    "graphics",
-    "extension.js",
-    "extension"
-  ],
-  "keywords": [
-    "",
-    "nodecg-bundle"
-  ],
-  "nodecg": {
-    "compatibleRange": "^1.1.1",
-    "dashboardPanels": [
-      {
-        "name": "panel",
-        "title": "Panel",
-        "width": 3,
-        "file": "dist/index.html",
-        "headerColor": "#C239B3"
-      }
-    ],
-    "graphics": [
-      {
-        "file": "dist/index.html",
-        "width": 1920,
-        "height": 1080
-      }
-    ]
-  },
-  "repository": "https://github.com/nodecg/nodecg.git",
-  "license": "MIT"
+	"name": "my-usual-layout",
+	"version": "0.0.0",
+	"description": "",
+	"homepage": "",
+	"author": {
+		"name": "na2na-p",
+		"email": "na2na@na2na.dev"
+	},
+	"scripts": {
+		"nodecg:start": "cd ../../ && nodecg start",
+		"build": "cd dashboard && yarn build && cd ../graphics && yarn build",
+		"lint": "cd dashboard && yarn lint && cd ../graphics && yarn lint",
+		"lint:fix": "cd dashboard && yarn lint:fix && cd ../graphics && yarn lint:fix"
+	},
+	"files": [
+		"dashboard",
+		"graphics",
+		"extension.js",
+		"extension"
+	],
+	"keywords": [
+		"",
+		"nodecg-bundle"
+	],
+	"nodecg": {
+		"compatibleRange": "^1.1.1",
+		"dashboardPanels": [
+			{
+				"name": "panel",
+				"title": "Panel",
+				"width": 3,
+				"file": "dist/index.html",
+				"headerColor": "#C239B3"
+			}
+		],
+		"graphics": [
+			{
+				"file": "dist/index.html",
+				"width": 1920,
+				"height": 1080
+			}
+		]
+	},
+	"repository": "https://github.com/nodecg/nodecg.git",
+	"license": "MIT"
 }
