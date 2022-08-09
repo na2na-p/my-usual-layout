@@ -1,0 +1,15 @@
+{
+  "name": "extension",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "na2na",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.33.0",
+    "@typescript-eslint/parser": "^5.33.0",
+    "eslint": ">=5.16.0",
+    "eslint-config-google": "^0.14.0",
+    "typescript": "^4.7.4"
+  }
+}

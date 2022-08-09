@@ -1,6 +1,7 @@
-'use strict';
+// Directly import the type definition file
+import {NodeCG} from '../../../../types/server';
 
-module.exports = function (nodecg) {
+export default (nodecg: NodeCG) => {
 	nodecg.log.info('Hello, from your bundle\'s extension!');
 	nodecg.log.info('I\'m where you put all your server-side code.');
 	nodecg.log.info(`To edit me, open "${__filename}" in your favorite text editor or IDE.`);
