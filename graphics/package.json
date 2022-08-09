@@ -11,20 +11,20 @@
 		"lint:fix": "yarn eslint --ext .tsx,.ts ./src --fix"
 	},
 	"dependencies": {
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0"
+		"react": "18.2.0",
+		"react-dom": "18.2.0"
 	},
 	"devDependencies": {
 		"@types/react": "^18.0.15",
 		"@types/react-dom": "^18.0.6",
-		"@typescript-eslint/eslint-plugin": "^5.33.0",
-		"@typescript-eslint/parser": "^5.33.0",
-		"@vitejs/plugin-react": "^2.0.0",
-		"eslint": ">=5.16.0",
-		"eslint-config-google": "^0.14.0",
-		"eslint-plugin-react": "^7.30.1",
-		"typescript": "^4.6.4",
-		"vite": "^3.0.0"
+		"@typescript-eslint/eslint-plugin": "5.33.0",
+		"@typescript-eslint/parser": "5.33.0",
+		"@vitejs/plugin-react": "2.0.0",
+		"eslint": "8.21.0",
+		"eslint-config-google": "0.14.0",
+		"eslint-plugin-react": "7.30.1",
+		"typescript": "4.7.4",
+		"vite": "3.0.5"
 	},
   "eslintIgnore": [
     ".eslintrc.js",
