@@ -29,7 +29,8 @@
 			"@/*": ["src/*"],
 			"@modules/*": ["src/modules/*"],
 			"@config/*": [".config/*"],
-			"@utils/*": ["src/utils/*"]
+			"@utils/*": ["src/utils/*"],
+			"@nodecg": ["../../../types/server.d.ts"]
 		}
 	},
 	"ts-node": {

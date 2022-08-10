@@ -1,5 +1,5 @@
 // Directly import the type definition file
-import {NodeCG} from '../../../../types/server';
+import {NodeCG} from '@nodecg';
 
 export default (nodecg: NodeCG) => {
 	nodecg.log.info('Hello, from your bundle\'s extension!');
