@@ -1016,7 +1016,7 @@ to-regex-range@^5.0.1:
   dependencies:
     is-number "^7.0.0"
 
-ts-nodecg@^0.3.1:
+ts-nodecg@0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/ts-nodecg/-/ts-nodecg-0.3.1.tgz#77a9249de4ae0136f33da26010da3816aff45ada"
   integrity sha512-eUG4BGVGcQRIvVb9ncUm2xF/6dEKoJxdHcylhaaj/NuwPZRNWE/uDpD4j4KmHbeAGjWH9hsg+8jFXfMN9TKfEA==
@@ -1026,7 +1026,7 @@ ts-nodecg@^0.3.1:
     "@types/socket.io-client" "^1.4.32"
     "@types/soundjs" "^0.6.27"
 
-tsc-alias@^1.7.0:
+tsc-alias@1.7.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/tsc-alias/-/tsc-alias-1.7.0.tgz#733482751133a25b97608ee424f8a1f085fcaaef"
   integrity sha512-n/K6g8S7Ec7Y/A2Z77Ikp2Uv1S1ERtT63ni69XV4W1YPT4rnNmz8ItgIiJYvKfFnKfqcZQ81UPjoKpMTxaC/rg==
