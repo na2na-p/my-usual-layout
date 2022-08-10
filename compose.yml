@@ -1,10 +1,10 @@
 services:
   nodecg:
     container_name: nodecg
-    # image: na2na/nodecg-usual:${{ github.ref }}
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: na2na/nodecg-usual:main
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile
     restart: always
     # volumes: # cfgとかはvolumeにしたほうが良さそう
     #   - .config:/app/.config
