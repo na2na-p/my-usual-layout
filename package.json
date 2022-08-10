@@ -23,7 +23,7 @@
 		"lint:graphics:fix": "yarn eslint --ext .tsx,.ts ./src/graphics --fix",
 		"lint:dashboard:fix": "yarn eslint --ext .tsx,.ts ./src/dashboard --fix",
 		"lint:extension:fix": "yarn eslint --ext .tsx,.ts ./src/extension --fix",
-		"tscNoEmit": "cd src/dashboard && yarn tsc --noEmit && cd ../graphics && yarn tsc --noEmit && cd ../extension && yarn tsc --noEmit",
+		"tscNoEmit": "yarn tsc -p src/dashboard/tsconfig.json --noEmit && yarn tsc -p src/extension/tsconfig.json --noEmit && yarn tsc -p src/graphics/tsconfig.json --noEmit",
 		"licenseCheck": "yarn license-checker --summary --failOn 'GPL;GPL-2.0;GPL-3.0;LGPL;LGPL-3.0'"
 	},
 	"files": [
