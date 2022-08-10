@@ -9,15 +9,15 @@
 	},
 	"scripts": {
 		"install": "cd src/dashboard && yarn install && cd ../graphics && yarn install && cd ../extension && yarn install",
-		"install:ci": "yarn install --immutable --immutable-cache --check-cache && cd dashboard && yarn install --immutable --immutable-cache --check-cache && cd ../graphics && yarn install --immutable --immutable-cache --check-cache",
+		"install:ci": "yarn install --immutable --immutable-cache --check-cache && cd src/dashboard && yarn install --immutable --immutable-cache --check-cache && cd ../graphics && yarn install --immutable --immutable-cache --check-cache && cd ../extension && yarn install --immutable --immutable-cache --check-cache",
 		"nodecg:start": "cd ../../ && nodecg start",
 		"build": "yarn build:extension && yarn build:graphics && yarn build:dashboard",
 		"build:extension": "cd src/extension && yarn build",
 		"build:graphics": "cd src/graphics && yarn build",
 		"build:dashboard": "cd src/dashboard && yarn build",
-		"lint": "cd dashboard && yarn lint && cd ../graphics && yarn lint",
-		"lint:fix": "cd dashboard && yarn lint:fix && cd ../graphics && yarn lint:fix",
-		"tscNoEmit": "cd dashboard && yarn tsc --noEmit && cd ../graphics && yarn tsc --noEmit",
+		"lint": "cd src/dashboard && yarn lint && cd ../graphics && yarn lint && cd ../extension && yarn lint",
+		"lint:fix": "cd src/dashboard && yarn lint:fix && cd ../graphics && yarn lint:fix && cd ../extension && yarn lint:fix",
+		"tscNoEmit": "cd src/dashboard && yarn tsc --noEmit && cd ../graphics && yarn tsc --noEmit && cd ../extension && yarn tsc --noEmit",
 		"licenseCheck": "yarn license-checker --summary --failOn 'GPL;GPL-2.0;GPL-3.0;LGPL;LGPL-3.0'"
 	},
 	"files": [
