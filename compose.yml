@@ -1,7 +1,7 @@
 services:
   nodecg:
     container_name: nodecg
-    # image: na2na/2na2-discord:main
+    # image: na2na/nodecg-usual:${{ github.ref }}
     build:
       context: .
       dockerfile: Dockerfile
