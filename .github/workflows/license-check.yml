@@ -6,12 +6,6 @@ on:
       - dashboard/yarn.lock
       - graphics/yarn.lock
       - extension/yarn.lock
-  pull_request:
-    paths:
-      - yarn.lock
-      - dashboard/yarn.lock
-      - graphics/yarn.lock
-      - extension/yarn.lock
 
 jobs:
   License-Check:
