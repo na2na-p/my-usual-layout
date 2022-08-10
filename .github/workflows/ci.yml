@@ -43,15 +43,13 @@ jobs:
   tscNoEmit:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: Set Node.js 16.x
         uses: actions/setup-node@v3
         with:
           node-version: 16.x
-      - name: settingUp packages
-        run: npm install --global nodecg-cli
-      - name: Checkout
-        run: mkdir nodecg && cd nodecg && nodecg setup && nodecg install na2na-p/my-usual-layout
       - name: ci
-        run: cd nodecg/bundles/my-usual-layout && yarn install:ci
+        run: yarn install:ci
       - name: tscNoEmit
-        run: cd nodecg/bundles/my-usual-layout && yarn tscNoEmit
+        run: yarn tscNoEmit

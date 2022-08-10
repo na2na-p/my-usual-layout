@@ -14,6 +14,7 @@ WORKDIR /bundleBuilder
 COPY . ./
 
 RUN yarn install \
+	&& echo NODE_ENV=production \
 	&& yarn build
 
 FROM node:16.16.0-bullseye-slim AS runner
