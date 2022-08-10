@@ -36,6 +36,7 @@ module.exports = {
 					'argsIgnorePattern': '^_',
 				},
 			],
+			'require-jsdoc': 'off'
 		},
 		'settings': {
 			'react': {
