@@ -8,8 +8,8 @@
 		"email": "na2na@na2na.dev"
 	},
 	"scripts": {
-		"install": "cd dashboard && yarn install --immutable --immutable-cache --check-cache && cd ../graphics && yarn install --immutable --immutable-cache --check-cache",
-		"install:ci": "cd dashboard && yarn install && cd ../graphics && yarn install",
+		"install": "cd dashboard && yarn install && cd ../graphics && yarn install",
+		"install:ci": "cd dashboard && yarn install --immutable --immutable-cache --check-cache && cd ../graphics && yarn install --immutable --immutable-cache --check-cache",
 		"nodecg:start": "cd ../../ && nodecg start",
 		"build": "cd dashboard && yarn build && cd ../graphics && yarn build",
 		"lint": "cd dashboard && yarn lint && cd ../graphics && yarn lint",
