@@ -1,0 +1,5 @@
+.eslintrc.js
+node_modules
+dist
+vite.config.*
+vite-env.d.ts

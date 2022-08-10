@@ -5,7 +5,7 @@
 		"module": "CommonJS",
 		"moduleResolution": "Node",
 		"allowJs": false,
-		"rootDir": "src",
+		"rootDir": ".",
 		"typeRoots": ["src/@types", "node_modules/@types"],
 		"baseUrl": ".",
 		"outDir": "../../extension",
@@ -26,8 +26,8 @@
 		"experimentalDecorators": true,
 		"emitDecoratorMetadata": true,
 		"paths": {
-			"@/*": ["src/*"],
-			"@modules/*": ["src/modules/*"],
+			"@/*": ["./*"],
+			"@modules/*": ["./modules/*"],
 			"@config/*": [".config/*"],
 			"@utils/*": ["src/utils/*"],
 			"@nodecg": ["../../../types/server.d.ts"]
@@ -37,5 +37,5 @@
 		"transpileOnly": true,
 		"transpiler": "ts-node/transpilers/swc-experimental"
 	},
-	"include": ["./src/**/*.ts"]
+	"include": ["./**/*.ts"]
 }
