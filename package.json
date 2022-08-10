@@ -14,7 +14,8 @@
 		"build": "cd dashboard && yarn build && cd ../graphics && yarn build",
 		"lint": "cd dashboard && yarn lint && cd ../graphics && yarn lint",
 		"lint:fix": "cd dashboard && yarn lint:fix && cd ../graphics && yarn lint:fix",
-		"tscNoEmit": "cd dashboard && yarn tsc --noEmit && cd ../graphics && yarn tsc --noEmit"
+		"tscNoEmit": "cd dashboard && yarn tsc --noEmit && cd ../graphics && yarn tsc --noEmit",
+		"licenseCheck": "yarn license-checker --summary --failOn 'GPL;GPL-2.0;GPL-3.0;LGPL;LGPL-3.0'"
 	},
 	"files": [
 		"dashboard",
@@ -46,5 +47,8 @@
 		]
 	},
 	"repository": "https://github.com/nodecg/nodecg.git",
-	"license": "MIT"
+	"license": "MIT",
+	"devDependencies": {
+		"license-checker": "^25.0.1"
+	}
 }

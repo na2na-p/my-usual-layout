@@ -1,0 +1,29 @@
+name: LicenseCheck
+on:
+  push:
+    paths:
+      - yarn.lock
+      - dashboard/yarn.lock
+      - graphics/yarn.lock
+      - extension/yarn.lock
+  pull_request:
+    paths:
+      - yarn.lock
+      - dashboard/yarn.lock
+      - graphics/yarn.lock
+      - extension/yarn.lock
+
+jobs:
+  License-Check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Set Node.js 18.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+      - name: ci
+        run: yarn install:ci
+      - name: License Check
+        run: yarn licenseCheck
