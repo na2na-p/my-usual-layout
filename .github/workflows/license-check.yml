@@ -1,11 +1,15 @@
 name: LicenseCheck
 on:
   push:
+    branches:
+      - develop
     paths:
       - yarn.lock
       - dashboard/yarn.lock
       - graphics/yarn.lock
       - extension/yarn.lock
+  pull_request:
+    types: [opened]
 
 jobs:
   License-Check:
