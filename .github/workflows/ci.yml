@@ -13,7 +13,7 @@ jobs:
       - name: ci
         run: yarn install:ci
       - name: ESLint
-        run: cd src/dashboard && yarn lint
+        run: yarn lint:dashboard
   ESLint-graphics:
     runs-on: ubuntu-latest
     steps:
@@ -26,7 +26,7 @@ jobs:
       - name: ci
         run: yarn install:ci
       - name: ESLint
-        run: cd src/dashboard && yarn lint
+        run: yarn lint:graphics
   ESLint-extension:
     runs-on: ubuntu-latest
     steps:
@@ -39,7 +39,7 @@ jobs:
       - name: ci
         run: yarn install:ci
       - name: ESLint
-        run: cd src/extension && yarn lint
+        run: yarn lint:extension
   tscNoEmit:
     runs-on: ubuntu-latest
     steps:

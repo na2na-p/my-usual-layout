@@ -15,8 +15,14 @@
 		"build:extension": "cd src/extension && yarn build",
 		"build:graphics": "cd src/graphics && yarn build",
 		"build:dashboard": "cd src/dashboard && yarn build",
-		"lint": "cd src/dashboard && yarn lint && cd ../graphics && yarn lint && cd ../extension && yarn lint",
-		"lint:fix": "cd src/dashboard && yarn lint:fix && cd ../graphics && yarn lint:fix && cd ../extension && yarn lint:fix",
+		"lint": "yarn lint:graphics && yarn lint:dashboard && yarn lint:extension",
+		"lint:graphics": "yarn eslint --ext .tsx,.ts ./src/graphics",
+		"lint:dashboard": "yarn eslint --ext .tsx,.ts ./src/dashboard",
+		"lint:extension": "yarn eslint --ext .tsx,.ts ./src/extension",
+		"lint:fix": "yarn lint:graphics:fix && yarn lint:dashboard:fix && yarn lint:extension:fix",
+		"lint:graphics:fix": "yarn eslint --ext .tsx,.ts ./src/graphics --fix",
+		"lint:dashboard:fix": "yarn eslint --ext .tsx,.ts ./src/dashboard --fix",
+		"lint:extension:fix": "yarn eslint --ext .tsx,.ts ./src/extension --fix",
 		"tscNoEmit": "cd src/dashboard && yarn tsc --noEmit && cd ../graphics && yarn tsc --noEmit && cd ../extension && yarn tsc --noEmit",
 		"licenseCheck": "yarn license-checker --summary --failOn 'GPL;GPL-2.0;GPL-3.0;LGPL;LGPL-3.0'"
 	},
@@ -52,6 +58,15 @@
 	"repository": "https://github.com/nodecg/nodecg.git",
 	"license": "MIT",
 	"devDependencies": {
-		"license-checker": "25.0.1"
+		"@typescript-eslint/eslint-plugin": "^5.33.0",
+		"@typescript-eslint/parser": "^5.33.0",
+		"eslint": ">=5.16.0",
+		"eslint-config-google": "^0.14.0",
+		"eslint-plugin-react": "^7.30.1",
+		"license-checker": "25.0.1",
+		"react": "^18.2.0",
+		"ts-nodecg": "^0.3.1",
+		"tsc-alias": "^1.7.0",
+		"typescript": "^4.7.4"
 	}
 }
