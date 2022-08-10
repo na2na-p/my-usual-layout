@@ -9,7 +9,6 @@ on:
       - graphics/yarn.lock
       - extension/yarn.lock
   pull_request:
-    types: [opened]
 
 jobs:
   License-Check:
