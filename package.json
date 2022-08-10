@@ -49,6 +49,6 @@
 	"repository": "https://github.com/nodecg/nodecg.git",
 	"license": "MIT",
 	"devDependencies": {
-		"license-checker": "^25.0.1"
+		"license-checker": "25.0.1"
 	}
 }
