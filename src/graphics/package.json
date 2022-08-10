@@ -23,14 +23,15 @@
 		"eslint": "8.21.0",
 		"eslint-config-google": "0.14.0",
 		"eslint-plugin-react": "7.30.1",
+		"ts-nodecg": "^0.3.1",
 		"typescript": "4.7.4",
 		"vite": "3.0.5"
 	},
-  "eslintIgnore": [
-    ".eslintrc.js",
-    "node_modules",
-    "dist",
-    "vite.config.*",
-    "vite-env.d.ts"
-  ]
+	"eslintIgnore": [
+		".eslintrc.js",
+		"node_modules",
+		"dist",
+		"vite.config.*",
+		"vite-env.d.ts"
+	]
 }

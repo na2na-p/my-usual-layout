@@ -1,10 +1,8 @@
-/// <reference path="../../../../types/browser.d.ts" />
-
 // eslint-disable-next-line require-jsdoc
 function App() {
 	const currentPath = window.location.pathname;
 	// ロード完了時にnodecg.log.info('Here\'s an example of using NodeCG\'s logging API!');する
-	nodecg.log.info('Here\'s an example of using NodeCG\'s logging API!');
+	window.nodecg.log.info('Here\'s an example of using NodeCG\'s logging API!');
 
 	return (
 		<>
