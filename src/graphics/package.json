@@ -11,13 +11,26 @@
 		"lint:fix": "yarn eslint --ext .tsx,.ts ./src --fix"
 	},
 	"dependencies": {
+		"@emotion/react": "^11.10.0",
+		"@emotion/styled": "^11.10.0",
+		"dayjs": "^1.11.4",
+		"gsap": "^3.10.4",
 		"react": "18.2.0",
-		"react-dom": "18.2.0"
+		"react-dom": "18.2.0",
+		"react-double-marquee": "^1.1.0"
 	},
 	"devDependencies": {
 		"@types/react": "18.0.17",
 		"@types/react-dom": "18.0.6",
 		"@vitejs/plugin-react": "2.0.0",
-		"vite": "3.0.5"
-	}
+		"vite": "3.0.5",
+		"vite-tsconfig-paths": "^3.5.0"
+	},
+	"eslintIgnore": [
+		".eslintrc.js",
+		"node_modules",
+		"dist",
+		"vite.config.*",
+		"vite-env.d.ts"
+	]
 }
