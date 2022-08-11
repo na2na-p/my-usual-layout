@@ -9,7 +9,6 @@ export default () => {
 
 	return (
 		<div css={style.timeRoot}>
-			{/* 2022/08/12 (Fri) */}
 			{dayjs(time).format('YYYY/MM/DD (ddd)')}
 			<br />
 			<div>
