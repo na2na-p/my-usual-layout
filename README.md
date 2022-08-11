@@ -6,7 +6,7 @@ You will need to have an appropriate version of NodeCG installed to use it.
 
 # メモ
 
-- 流れる文字列に`react-double-marquee`使ってみる
+- ~~流れる文字列に`react-double-marquee`使ってみる~~ 型定義もないしアレかも、他のライブラリ探すのを先にしたい
 
 # Graphics デザイン案
 
