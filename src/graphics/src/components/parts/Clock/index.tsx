@@ -9,14 +9,11 @@ export default () => {
 
 	return (
 		<div css={style.timeRoot}>
-			{dayjs(time).format('YYYY/MM/DD')}
+			{/* 2022/08/12 (Fri) */}
+			{dayjs(time).format('YYYY/MM/DD (ddd)')}
 			<br />
 			<div>
-			{dayjs(time).format('HH')}
-			<span>
-				:
-			</span>
-			{dayjs(time).format('mm')}
+			{dayjs(time).format('HH:mm')}
 			</div>
 		</div>
 	);
