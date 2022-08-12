@@ -29,13 +29,8 @@ module.exports = {
 			'react/react-in-jsx-scope': 'off',
 			'react/display-name': 'off', // ファイル名とコンポーネント名を一致させることで解決させるので不要
 			'spaced-comment': 'off',
-			'@typescript-eslint/no-unused-vars': [
-				'error',
-				{
-					'varsIgnorePattern': '^_',
-					'argsIgnorePattern': '^_',
-				},
-			],
+			'@typescript-eslint/no-unused-vars': 'off',
+			'no-unused-vars': 'warn',
 			'require-jsdoc': 'off'
 		},
 		'settings': {
