@@ -18,7 +18,7 @@
 		"@fortawesome/free-solid-svg-icons": "6.1.2",
 		"@fortawesome/react-fontawesome": "0.2.0",
 		"dayjs": "1.11.4",
-		"emotion-reset": "^3.0.1",
+		"emotion-reset": "3.0.1",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
 		"react-double-marquee": "1.1.0",
