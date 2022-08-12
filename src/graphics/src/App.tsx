@@ -1,3 +1,5 @@
+import {Global, css} from '@emotion/react';
+import emotionReset from 'emotion-reset';
 import Clock from '@components/parts/Clock';
 import Telop from '@components/parts/Telop';
 import Status from '@components/parts/Status';
@@ -9,6 +11,16 @@ function App() {
 
 	return (
 		<>
+		<Global styles={css`
+        ${emotionReset}
+
+        *, *::after, *::before {
+          box-sizing: border-box;
+          -moz-osx-font-smoothing: grayscale;
+          -webkit-font-smoothing: antialiased;
+          font-smoothing: antialiased;
+        }
+      `} />
 		<div css={style.upperLeft}>
 			<Clock />
 		</div>
