@@ -12,8 +12,10 @@ export default css({
 	},
 	'#root': {
 		// 左上で固定
-		position: 'absolute',
+		position: 'fixed',
 		top: '0',
 		left: '0',
+		width: '1920px',
+		height: '1080px',
 	},
 });
