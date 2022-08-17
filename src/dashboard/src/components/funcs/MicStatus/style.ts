@@ -15,5 +15,8 @@ export default {
 		'.MuiSwitch-thumb': {
 			backgroundColor: '#C239B3',
 		},
+		'.MuiSwitch-switchBase.Mui-checked+.MuiSwitch-track': {
+			backgroundColor: '#C239B3',
+		},
 	} as SxProps<Theme>,
 };
