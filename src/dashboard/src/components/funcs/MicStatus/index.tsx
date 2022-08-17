@@ -9,7 +9,7 @@ export default () => {
 		<div css={style.root}>
 			<FormControl>
 				<b>Mic Status</b>
-				<Switch checked={micIsEnabled} onChange={() => setMicIsEnabled(!micIsEnabled)} sx={style.sx} color='secondary' />
+				<Switch checked={micIsEnabled} onChange={() => setMicIsEnabled(!micIsEnabled)} sx={style.sx} />
 				{/* Switchの横に並ぶようにする */}
 				<div css={style.status}>
 					{micIsEnabled ? 'Enabled' : 'Disabled'}
