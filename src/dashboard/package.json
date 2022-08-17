@@ -14,7 +14,7 @@
     "@emotion/react": "11.10.0",
     "@emotion/styled": "11.10.0",
     "@mui/icons-material": "5.8.4",
-    "@mui/material": "5.10.0",
+    "@mui/material": "5.10.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
@@ -22,7 +22,7 @@
     "@types/react": "18.0.17",
     "@types/react-dom": "18.0.6",
     "@vitejs/plugin-react": "2.0.1",
-    "vite": "3.0.7",
+    "vite": "3.0.8",
     "vite-tsconfig-paths": "3.5.0"
   },
   "eslintIgnore": [
