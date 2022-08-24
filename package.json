@@ -58,8 +58,8 @@
 	"repository": "https://github.com/nodecg/nodecg.git",
 	"license": "MIT",
 	"devDependencies": {
-		"@typescript-eslint/eslint-plugin": "5.33.1",
-		"@typescript-eslint/parser": "5.33.1",
+		"@typescript-eslint/eslint-plugin": "5.34.0",
+		"@typescript-eslint/parser": "5.34.0",
 		"eslint": "8.22.0",
 		"eslint-config-google": "0.14.0",
 		"eslint-plugin-react": "7.30.1",
