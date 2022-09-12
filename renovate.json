@@ -6,6 +6,7 @@
 		"group:definitelyTyped",
 		"group:nodeJs"
 	],
+	"labels": ["dependencies"],
 	"packageRules": [
 		{
 			"matchUpdateTypes": ["major"],
