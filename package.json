@@ -58,6 +58,7 @@
 	"repository": "https://github.com/nodecg/nodecg.git",
 	"license": "MIT",
 	"devDependencies": {
+		"@emotion/eslint-plugin": "^11.10.0",
 		"@typescript-eslint/eslint-plugin": "5.36.2",
 		"@typescript-eslint/parser": "5.36.2",
 		"eslint": "8.23.0",

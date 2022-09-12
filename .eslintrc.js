@@ -20,8 +20,13 @@ module.exports = {
     'plugins': [
         'react',
         '@typescript-eslint',
+				'@emotion',
     ],
     'rules': {
+			'react/no-unknown-property': [
+				'error',
+				{ignore: ['css']},
+			],
 			'max-len': 'off',
 			'indent': 'off',
 			'no-tabs': 'off',
@@ -31,7 +36,10 @@ module.exports = {
 			'spaced-comment': 'off',
 			'@typescript-eslint/no-unused-vars': 'off',
 			'no-unused-vars': 'warn',
-			'require-jsdoc': 'off'
+			'require-jsdoc': 'off',
+			'@emotion/no-vanilla': 'error',
+			'@emotion/import-from-emotion': 'error',
+			'@emotion/styled-import': 'error',
 		},
 		'settings': {
 			'react': {
