@@ -1,0 +1,26 @@
+name: enable auto merge
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+    branches:
+      - main
+      - develop
+
+jobs:
+  enable-auto-merge:
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Generate github token
+        id: generate_token
+        uses: ./.github/actions/github-app-token
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.PRIVATE_KEY }}
+      - uses: alexwilson/enable-github-automerge-action@main
+        with:
+          github-token: ${{ steps.generate_token.outputs.token }}
