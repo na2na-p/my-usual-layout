@@ -12,5 +12,5 @@
 			"matchUpdateTypes": ["major"],
 			"addLabels": ["major update"]
 		}
-	],
+	]
 }
