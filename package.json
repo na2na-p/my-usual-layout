@@ -61,7 +61,7 @@
 		"@emotion/eslint-plugin": "11.10.0",
 		"@typescript-eslint/eslint-plugin": "5.43.0",
 		"@typescript-eslint/parser": "5.43.0",
-		"eslint": "8.27.0",
+		"eslint": "8.28.0",
 		"eslint-config-google": "0.14.0",
 		"eslint-plugin-react": "7.31.11",
 		"license-checker": "25.0.1",
