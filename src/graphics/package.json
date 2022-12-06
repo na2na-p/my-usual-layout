@@ -17,7 +17,7 @@
 		"@fortawesome/free-brands-svg-icons": "6.2.1",
 		"@fortawesome/free-solid-svg-icons": "6.2.1",
 		"@fortawesome/react-fontawesome": "0.2.0",
-		"dayjs": "1.11.6",
+		"dayjs": "1.11.7",
 		"emotion-reset": "3.0.1",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
