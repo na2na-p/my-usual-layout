@@ -29,7 +29,7 @@
 		"@types/react-dom": "18.0.9",
 		"@vitejs/plugin-react": "3.0.0",
 		"vite": "4.0.0",
-		"vite-tsconfig-paths": "4.0.1"
+		"vite-tsconfig-paths": "4.0.2"
 	},
 	"eslintIgnore": [
 		".eslintrc.js",
