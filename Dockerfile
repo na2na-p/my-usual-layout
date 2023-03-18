@@ -1,4 +1,4 @@
-FROM node:19.7.0-bullseye AS base
+FROM node:19.8.1-bullseye AS base
 
 ARG NODE_ENV=production
 
@@ -7,7 +7,7 @@ WORKDIR /nodecg
 RUN npm install -g nodecg-cli \
 	&& nodecg setup
 
-FROM node:19.7.0-bullseye AS builder
+FROM node:19.8.1-bullseye AS builder
 
 WORKDIR /bundleBuilder
 
@@ -17,7 +17,7 @@ RUN yarn install \
 	&& echo NODE_ENV=production \
 	&& yarn build
 
-FROM node:19.7.0-bullseye-slim AS runner
+FROM node:19.8.1-bullseye-slim AS runner
 
 WORKDIR /nodecg
 
