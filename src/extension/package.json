@@ -13,7 +13,7 @@
 	"devDependencies": {
 		"@typescript-eslint/eslint-plugin": "5.57.0",
 		"@typescript-eslint/parser": "5.57.0",
-		"eslint": "8.36.0",
+		"eslint": "8.37.0",
 		"eslint-config-google": "0.14.0",
 		"ts-nodecg": "0.3.1",
 		"tsc-alias": "1.8.4",
