@@ -16,7 +16,7 @@
 		"eslint": "8.37.0",
 		"eslint-config-google": "0.14.0",
 		"ts-nodecg": "0.3.1",
-		"tsc-alias": "1.8.4",
+		"tsc-alias": "1.8.5",
 		"typescript": "5.0.2"
 	}
 }
