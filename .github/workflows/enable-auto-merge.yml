@@ -1,27 +1,29 @@
-name: enable auto merge
+name: Enable auto merge
 on:
   pull_request:
     types:
       - opened
       - reopened
+      - ready_for_review
     branches:
       - main
       - develop
 
 jobs:
   enable-auto-merge:
-    timeout-minutes: 60
+    if: github.event.pull_request.draft == false
     runs-on: ubuntu-latest
-#     if: github.event.pull_request.user.login == 'renovate[bot]' && contains(github.event.pull_request.labels.*.name, 'dependencies')
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.1.1
       - name: Generate github token
         id: generate_token
-        uses: ./.github/actions/github-app-token
+        uses: tibdex/github-app-token@v2.1.0
         with:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.PRIVATE_KEY }}
+        env:
+          OPENSSL_CONF: /dev/null
       - uses: alexwilson/enable-github-automerge-action@main
         with:
           github-token: ${{ steps.generate_token.outputs.token }}
