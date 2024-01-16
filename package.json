@@ -8,8 +8,6 @@
 		"email": "na2na@na2na.dev"
 	},
 	"scripts": {
-		"install": "cd src/dashboard && pnpm install && cd ../graphics && pnpm install && cd ../extension && pnpm install",
-		"install:ci": "pnpm install --immutable --immutable-cache --check-cache && cd src/dashboard && pnpm install --immutable --immutable-cache --check-cache && cd ../graphics && pnpm install --immutable --immutable-cache --check-cache && cd ../extension && pnpm install --immutable --immutable-cache --check-cache",
 		"nodecg:start": "cd ../../ && nodecg start",
 		"build": "turbo build",
 		"build:extension": "cd src/extension && pnpm build",

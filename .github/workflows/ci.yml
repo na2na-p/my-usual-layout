@@ -12,7 +12,7 @@ jobs:
       - name: asdf install
         uses: asdf-vm/actions/install@v3
       - name: ci
-        run: pnpm install:ci
+        run: pnpm install --frozen-lockfile
       - name: ESLint
         run: pnpm lint:dashboard
   ESLint-graphics:
@@ -27,7 +27,7 @@ jobs:
       - name: asdf install
         uses: asdf-vm/actions/install@v3
       - name: ci
-        run: pnpm install:ci
+        run: pnpm install --frozen-lockfile
       - name: ESLint
         run: pnpm lint:graphics
   ESLint-extension:
@@ -42,7 +42,7 @@ jobs:
       - name: asdf install
         uses: asdf-vm/actions/install@v3
       - name: ci
-        run: pnpm install:ci
+        run: pnpm install --frozen-lockfile
       - name: ESLint
         run: pnpm lint:extension
   tscNoEmit:
@@ -57,6 +57,6 @@ jobs:
       - name: asdf install
         uses: asdf-vm/actions/install@v3
       - name: ci
-        run: pnpm install:ci
+        run: pnpm install --frozen-lockfile
       - name: tscNoEmit
         run: pnpm tscNoEmit

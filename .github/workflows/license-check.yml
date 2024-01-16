@@ -23,6 +23,6 @@ jobs:
       - name: asdf install
         uses: asdf-vm/actions/install@v3
       - name: ci
-        run: pnpm install:ci
+        run: pnpm install --frozen-lockfile
       - name: License Check
         run: pnpm licenseCheck
