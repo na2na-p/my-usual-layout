@@ -16,11 +16,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Set Node.js 18.x
-        uses: actions/setup-node@v4
-        with:
-          node-version: 16.x
+      - name: Setup asdf
+        uses: asdf-vm/actions/setup@v3
+        # 2回目以降エラーが出るが問題なし
+        continue-on-error: true
+      - name: asdf install
+        uses: asdf-vm/actions/install@v3
       - name: ci
-        run: yarn install:ci
+        run: pnpm install --frozen-lockfile
       - name: License Check
-        run: yarn licenseCheck
+        run: pnpm licenseCheck
