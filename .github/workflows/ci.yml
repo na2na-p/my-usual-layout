@@ -6,50 +6,57 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Set Node.js 20.x
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20.x
+      - name: Setup asdf
+        uses: asdf-vm/actions/setup@v3
+        continue-on-error: true
+      - name: asdf install
+        uses: asdf-vm/actions/install@v3
       - name: ci
-        run: yarn install:ci
+        run: pnpm install:ci
       - name: ESLint
-        run: yarn lint:dashboard
+        run: pnpm lint:dashboard
   ESLint-graphics:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Set Node.js 20.x
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20.x
+      - name: Setup asdf
+        uses: asdf-vm/actions/setup@v3
+        # 2回目以降エラーが出るが問題なし
+        continue-on-error: true
+      - name: asdf install
+        uses: asdf-vm/actions/install@v3
       - name: ci
-        run: yarn install:ci
+        run: pnpm install:ci
       - name: ESLint
-        run: yarn lint:graphics
+        run: pnpm lint:graphics
   ESLint-extension:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Set Node.js 20.x
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20.x
+      - name: Setup asdf
+        uses: asdf-vm/actions/setup@v3
+        # 2回目以降エラーが出るが問題なし
+        continue-on-error: true
+      - name: asdf install
+        uses: asdf-vm/actions/install@v3
       - name: ci
-        run: yarn install:ci
+        run: pnpm install:ci
       - name: ESLint
-        run: yarn lint:extension
+        run: pnpm lint:extension
   tscNoEmit:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Set Node.js 20.x
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20.x
+      - name: Setup asdf
+        uses: asdf-vm/actions/setup@v3
+        # 2回目以降エラーが出るが問題なし
+        continue-on-error: true
+      - name: asdf install
+        uses: asdf-vm/actions/install@v3
       - name: ci
-        run: yarn install:ci
+        run: pnpm install:ci
       - name: tscNoEmit
-        run: yarn tscNoEmit
+        run: pnpm tscNoEmit
